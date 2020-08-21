@@ -24,7 +24,7 @@ route.post('/',async (req,res)=>{
     if(!validate)
         res.send('Password or Email is incorrect')
     // console.log(result)
-    const token = await jwt.sign({_id:result._id},process.env.SECRET_TOKEN,{expiresIn:60})
+    const token = await jwt.sign({_id:result._id},process.env.SECRET_TOKEN)
     // console.log('server side jwt = ',token)
     res.header('auth_token',token).send('1') 
 })
