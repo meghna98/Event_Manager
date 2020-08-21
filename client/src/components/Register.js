@@ -71,6 +71,7 @@ export class Register extends Component {
                                 value={this.state.name}
                                 placeholder="Enter your name"
                                 onChange={this.handleChange}
+                                required
                             /><br/>
                             <label>Email</label><br/>
                             <input type="email"
@@ -79,14 +80,16 @@ export class Register extends Component {
                                 value={this.state.email}
                                 placeholder="Enter Email-Id"
                                 onChange={this.handleChange}
+                                required
                             /><br/>
-                            <label>Password</label><br/>
+                            <label>Password (min 6 characters)</label><br/>
                             <input type="password"
                                 name="password"
                                 autoComplete="off"
                                 value={this.state.password}
                                 placeholder="Enter Password"
                                 onChange={this.handleChange}
+                                required
                             /><br/>
                             <label>Confirm Password</label><br/>
                             <input type="password"
@@ -95,6 +98,7 @@ export class Register extends Component {
                                 value={this.state.cPassword}
                                 placeholder="Re-enter password"
                                 onChange={this.handleChange}
+                                required
                             /><br/><br/>
                             <button type="submit" className="loginSubmit">Register Me</button>
                             </form>
