@@ -33,9 +33,10 @@ html,body{
     @include flexContainer(column);
     align-items: flex-start;
     position: relative;
-    padding:1% 1.5%;
+    padding:3% 2% 2% 2%;
     // border-bottom:1px dashed teal;
     box-shadow: 0px 0px 5px 1px rgb(180, 178, 178);
+    margin-top:2%;
 }
 
 .eventForm{
@@ -80,7 +81,7 @@ html,body{
         border:1px solid #aaa;
         position: absolute;
         bottom:-9%;
-        left:50%;
+        left:48%;
     }
     label{
         color:rgb(66, 65, 65);
