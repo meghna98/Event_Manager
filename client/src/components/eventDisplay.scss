@@ -1,0 +1,49 @@
+@import './login';
+
+.eventcontainer{
+    @include flexContainer(column);
+    align-items: flex-start;
+    width:100%;
+    padding:1% 2% 1.5% 2%;
+    border-bottom:1px dashed $borderColor;
+}
+.eventHead{
+    @include flexContainer(row);
+    justify-content: space-between;
+    width:100%;
+    margin:0%;
+}
+.eventTitle{
+    color:$fontColor;
+    font-weight: 800;
+    font-size:20px;
+}
+.eventDate{
+    margin:0% 1% 1% 0%;
+    color:$dateColor;
+    font-size:15px;
+}
+.eventDetail{
+    padding-right:2%;
+    max-height:0;
+    overflow-y: hidden;
+    margin:-1% 1% 1% 0%;
+    padding-top:2%;
+    color:$fontColor;
+    font-size:17px;
+    // border:1px solid orange;
+    word-break: break-all;
+    text-align: justify;
+    transition: max-height 0.5s ease;
+}
+.eventcontainer .eventHead .eventDrop{
+    margin-top: 1%;
+    transform:translate(0%) rotate(-180deg) ;
+    // border:1px solid black;
+    text-align:justify;
+    transition: all 0.3s linear;
+    
+}
+.eventcontainer.open .eventHead .eventDrop{
+    transform: translate(0%) rotate(0deg);
+}

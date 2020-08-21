@@ -1,0 +1,163 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+}
+
+.registerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: teal;
+}
+
+.registerCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  background-color: #ddd;
+  padding: 0% 2% 2% 2%;
+  border-radius: 7px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 0px 0px 10px 3px #252525;
+          box-shadow: 0px 0px 10px 3px #252525;
+}
+
+.registerHeading {
+  color: teal;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0xp 0px 10px 5px #3b3b3b;
+          box-shadow: 0xp 0px 10px 5px #3b3b3b;
+  margin-bottom: -20px;
+  margin-top: 15px;
+}
+
+.registerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.registerContent form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 85%;
+  margin-top: -1%;
+}
+
+.registerContent form p {
+  color: red;
+}
+
+.registerContent form input {
+  width: 90%;
+  height: 25px;
+  border: none;
+  outline: none;
+  margin-top: -3%;
+  padding: 1% 2%;
+}
+
+.registerContent form input:focus {
+  border-bottom: 3px solid teal;
+}
+
+.registerContent form .loginSubmit {
+  background-color: teal;
+  border: none;
+  outline: none;
+  padding: 3%;
+  width: 100%;
+  color: #ddd;
+  font-weight: 800;
+  border-radius: 7px;
+  -webkit-box-shadow: 1px 2px 3px 0.3px rgba(0, 0, 0, 0.7);
+          box-shadow: 1px 2px 3px 0.3px rgba(0, 0, 0, 0.7);
+}
+
+.registerContent form .loginSubmit:hover {
+  background-color: #025f5f;
+}
+
+@media (max-width: 768px) {
+  .registerCard {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=Register.css.map */
